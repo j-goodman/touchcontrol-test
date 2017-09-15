@@ -8,10 +8,10 @@ window.onload = function () {
 
 function touchStart (event) {
   document.getElementById('rectangle').style.background = '#00f';
-  document.getElementById('paragraph').innerText = event;
+  document.getElementById('paragraph').innerText = JSON.stringify(event);
 }
 
 function touchEnd (event) {
   document.getElementById('rectangle').style.background = '#f00';
-  document.getElementById('paragraph').innerText = event;
+  document.getElementById('paragraph').innerText = JSON.stringify(event);
 }
