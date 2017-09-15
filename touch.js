@@ -6,10 +6,12 @@ window.onload = function () {
   rect.addEventListener("touchend", touchEnd, false);
 }
 
-function touchStart () {
+function touchStart (event) {
   document.getElementById('rectangle').style.background = '#00f';
+  document.getElementById('paragraph').innerText = event;
 }
 
-function touchEnd () {
+function touchEnd (event) {
   document.getElementById('rectangle').style.background = '#f00';
+  document.getElementById('paragraph').innerText = event;
 }
